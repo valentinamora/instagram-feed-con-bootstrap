@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram con Bootstrap </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/30dff84beb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> My GRAY Instagram </a>
+      </div>
+      <div class="d-flex">
+        <button class="btn btn-secondary me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+          a new post </button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="">
+                      <label for="message-text" class="col-form-label">Caption:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="container mb-3">
+                  <button type="button" class="btn btn-outline-dark bs-secondary-color mx-1"><i
+                      class=" fa-solid fa-camera"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-dark bs-secondary-color"><i
+                      class="fa-solid fa-location-dot"></i>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="nav nav-tabs d-flex justify-content-center w-100" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-regular fa-square"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <!-- va el codigo de 9 -->
+          <div class="row mt-4">
+            <div class="col">
+              <img
+                src="https://fastly.picsum.photos/id/870/600/400.jpg?grayscale&hmac=LTkJfttbNErPRRVg1gTnj5OJ-AHmbsn_7loVZLvHNSs"
+                class="img-fluid" alt="Imagen 1">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/126/600/400.jpg?grayscale&hmac=k3NlNis7rUHQFiNug9JLPWctn4wHNQRdBofcl0ba5aU" class="img-fluid"
+                alt="Imagen 2">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/110/600/400.jpg?grayscale&hmac=Hu4em_V-CrRliYeo5-5I_z9Ki6lSAF3Q4dQGLwV1KrE" class="img-fluid"
+                alt="Imagen 3">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <img
+                src="https://fastly.picsum.photos/id/996/600/400.jpg?grayscale&hmac=OCdScIPdzebCZPSFo5OoM6fsbMMokKAol91iLK8gLAE"
+                class="img-fluid" alt="Imagen 4">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/1053/600/400.jpg?grayscale&hmac=yReDDA-zc1wU5xfC2yFzE5RUK2SbSzzuDrNGdNq_U6Q" class="img-fluid"
+                alt="Imagen 5">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/598/600/400.jpg?grayscale&hmac=Iv6nBlqJglugpga8PHPCYqgHNeqzw519WKgc-dT3I1k" class="img-fluid"
+                alt="Imagen 6">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/289/600/400.jpg?grayscale&hmac=9BT6O5LwZp2fFiRClgpcGFlBnBcrsfSXiE0v5oFDYOM" class="img-fluid"
+                alt="Imagen 7">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/389/600/400.jpg?grayscale&hmac=LGMUqCS0GN_B9KN_OezX_NZdEsEJAEAfJB6F5xrZATc" class="img-fluid"
+                alt="Imagen 8">
+            </div>
+            <div class="col">
+              <img src="https://fastly.picsum.photos/id/530/600/400.jpg?grayscale&hmac=2ykmaOI2XS40v051C-NsXL2k3N0w5uuvpdTFDZ-spK4" class="img-fluid"
+                alt="Imagen 9">
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <!-- aqui va el otro  -->
+
+
+          <div class="d-flex flex-column justify-content-center">
+            <div>
+              <img src="https://fastly.picsum.photos/id/530/600/400.jpg?grayscale&hmac=2ykmaOI2XS40v051C-NsXL2k3N0w5uuvpdTFDZ-spK4" class="img-fluid"
+                alt="Imagen 9">
+            </div>
+
+
+
+            
+          </div>
+          <!-- termina aqui  -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
