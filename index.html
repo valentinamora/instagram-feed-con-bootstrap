@@ -13,19 +13,19 @@
   <script src="https://kit.fontawesome.com/30dff84beb.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-light-subtle">
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <div>
-        <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> My GRAY Instagram </a>
+        <a class="navbar-brand text-secondary"><i class="fa-brands fa-instagram fs-2 me-2 link-secondary"></i> My GRAY
+          Instagram </a>
       </div>
       <div class="d-flex">
-        <button class="btn btn-secondary me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+        <button class="btn btn-white me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
           a new post </button>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-gear"></i>
+          <button class="btn btn-ligth dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear link-secondary"></i>
           </button>
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -33,22 +33,22 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button border" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form>
                     <div class="">
-                      <label for="message-text" class="col-form-label">Caption:</label>
+                      <label for="message-text" class="col-form-label text-secondary">Caption:</label>
                       <textarea class="form-control" id="message-text"></textarea>
                     </div>
                   </form>
                 </div>
                 <div class="container mb-3">
-                  <button type="button" class="btn btn-outline-dark bs-secondary-color mx-1"><i
+                  <button type="button" class="btn btn-outline-secondary link-secondary mx-1"><i
                       class=" fa-solid fa-camera"></i>
                   </button>
-                  <button type="button" class="btn btn-outline-dark bs-secondary-color"><i
+                  <button type="button" class="btn btn-outline-secondary link-secondary"><i
                       class="fa-solid fa-location-dot"></i>
                   </button>
                 </div>
@@ -60,9 +60,11 @@
             </div>
           </div>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item text-secondary" href="#">Profile</a></li>
+            <li><a class="dropdown-item text-secondary" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item text-secondary" href="#">Privacy and data</a></li>
+            <li><a class="dropdown-item text-body-secondary border-top" href="#">Log out</a></li>
+
           </ul>
         </div>
       </div>
@@ -71,14 +73,18 @@
       <ul class="nav nav-tabs d-flex justify-content-center w-100" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-regular fa-square"></i></button>
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-regular fa-square link-secondary fs-2 me-2"></i>
+          </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells link-secondary fs-2 me-2"></i>
+          </button>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content d-flex flex-column w-100 justify-content-center" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
           tabindex="0">
           <!-- va el codigo de 9 -->
@@ -89,41 +95,48 @@
                 class="img-fluid" alt="Imagen 1">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/126/600/400.jpg?grayscale&hmac=k3NlNis7rUHQFiNug9JLPWctn4wHNQRdBofcl0ba5aU" class="img-fluid"
-                alt="Imagen 2">
+              <img
+                src="https://fastly.picsum.photos/id/400/600/400.jpg?grayscale&hmac=chxlEriR4dJWqM09knfqxtmxtODy2Tq703M8jz0298g"
+                class="img-fluid" alt="Imagen 2">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/110/600/400.jpg?grayscale&hmac=Hu4em_V-CrRliYeo5-5I_z9Ki6lSAF3Q4dQGLwV1KrE" class="img-fluid"
-                alt="Imagen 3">
+              <img
+                src="https://fastly.picsum.photos/id/110/600/400.jpg?grayscale&hmac=Hu4em_V-CrRliYeo5-5I_z9Ki6lSAF3Q4dQGLwV1KrE"
+                class="img-fluid" alt="Imagen 3">
             </div>
           </div>
           <div class="row mt-4">
             <div class="col">
               <img
-                src="https://fastly.picsum.photos/id/996/600/400.jpg?grayscale&hmac=OCdScIPdzebCZPSFo5OoM6fsbMMokKAol91iLK8gLAE"
+                src="https://fastly.picsum.photos/id/291/600/400.jpg?grayscale&hmac=cpBIKlcQlL2hdhnOx8YRxMHtXLrGk0Dg2Um-uUSP1Ug"
                 class="img-fluid" alt="Imagen 4">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/1053/600/400.jpg?grayscale&hmac=yReDDA-zc1wU5xfC2yFzE5RUK2SbSzzuDrNGdNq_U6Q" class="img-fluid"
-                alt="Imagen 5">
+              <img
+                src="https://fastly.picsum.photos/id/1053/600/400.jpg?grayscale&hmac=yReDDA-zc1wU5xfC2yFzE5RUK2SbSzzuDrNGdNq_U6Q"
+                class="img-fluid" alt="Imagen 5">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/598/600/400.jpg?grayscale&hmac=Iv6nBlqJglugpga8PHPCYqgHNeqzw519WKgc-dT3I1k" class="img-fluid"
-                alt="Imagen 6">
+              <img
+                src="https://fastly.picsum.photos/id/786/600/400.jpg?grayscale&hmac=pxwhh_yKfmp5dRAyj3kctdBnzcUfl3nQrDEhiEFAH9Q"
+                class="img-fluid" alt="Imagen 6">
             </div>
           </div>
           <div class="row mt-4">
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/289/600/400.jpg?grayscale&hmac=9BT6O5LwZp2fFiRClgpcGFlBnBcrsfSXiE0v5oFDYOM" class="img-fluid"
-                alt="Imagen 7">
+              <img
+                src="https://fastly.picsum.photos/id/289/600/400.jpg?grayscale&hmac=9BT6O5LwZp2fFiRClgpcGFlBnBcrsfSXiE0v5oFDYOM"
+                class="img-fluid" alt="Imagen 7">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/389/600/400.jpg?grayscale&hmac=LGMUqCS0GN_B9KN_OezX_NZdEsEJAEAfJB6F5xrZATc" class="img-fluid"
-                alt="Imagen 8">
+              <img
+                src="https://fastly.picsum.photos/id/413/600/400.jpg?grayscale&hmac=-eNljfSHpGftYT_PJkBmrr416xk46IIoqQoSfFF10Pc"
+                class="img-fluid" alt="Imagen 8">
             </div>
             <div class="col">
-              <img src="https://fastly.picsum.photos/id/530/600/400.jpg?grayscale&hmac=2ykmaOI2XS40v051C-NsXL2k3N0w5uuvpdTFDZ-spK4" class="img-fluid"
-                alt="Imagen 9">
+              <img
+                src="https://fastly.picsum.photos/id/598/600/400.jpg?grayscale&hmac=Iv6nBlqJglugpga8PHPCYqgHNeqzw519WKgc-dT3I1k"
+                class="img-fluid" alt="Imagen 9">
             </div>
 
           </div>
@@ -131,18 +144,121 @@
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <!-- aqui va el otro  -->
 
+          <div class="d-flex flex-column justify-content-center w-100">
+            <!-- contenedores empieza aca  -->
 
-          <div class="d-flex flex-column justify-content-center">
-            <div>
-              <img src="https://fastly.picsum.photos/id/530/600/400.jpg?grayscale&hmac=2ykmaOI2XS40v051C-NsXL2k3N0w5uuvpdTFDZ-spK4" class="img-fluid"
-                alt="Imagen 9">
+            <!-- codigo de imagenes 1 -->
+            <div class="container col-6 mt-4">
+              <div class="card mb-3 myOwnShadow fa-bg-secundary" style="width: 40rem;">
+
+                <div class="card-body d-flex align-items-center">
+                  <i class="fa-regular fa-face-smile fs-1 me-4 link-secondary"></i>
+                  <div>
+                    <h2 class="my-0 py-0 fs-3 text-secondary"> GRAY nigth </h2>
+                  </div>
+                  <div class="d-flex align-items-center ms-auto gap-2">
+                    <p class="my-0 py-0 fs-6 text-secondary">01/2024</p>
+                    <i class="fa-solid fa-ellipsis-vertical fs-3 link-secondary"></i>
+                  </div>
+                </div>
+                <img
+                  src="https://fastly.picsum.photos/id/869/1000/700.jpg?grayscale&hmac=SGNHb-E1Bt-xuHwJegJOXPOVaZYjbmFg0oxOfyqotnU"
+                  class="img-fluid" alt="Imagen 9">
+
+                <div class="card-body">
+                  <div class="mb-3 d-flex">
+                    <i class="fa-regular fa-heart fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-comment fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-paper-plane fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-bookmark fs-4 ms-auto link-secondary"></i>
+                  </div>
+                  <p class="lead text-secondary">457 likes</p>
+                  <p class="fs-6 text-secondary">Quisque mollis tincidunt metus, vel mollis tortor scelerisque at. Donec
+                    eget sodales
+                    felis, ut fermentum ipsum. In non diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec blandit porttitor, erat nunc
+                    molestie ipsum, a commodo sem enim sit amet justo. Donec ut lorem interdum, eleifend lorem id,
+                    pellentesque arcu. Integer cursus pellentesque tellus, pretium consequat mi vulputate a. #graynigth
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- termina aca 1-->
+            <!-- comienza 2 -->
+            <div class="container col-6 mt-4">
+              <div class="card mb-3 myOwnShadow fa-bg-secundary" style="width: 40rem;">
+
+                <div class="card-body d-flex align-items-center">
+                  <i class="fa-regular fa-face-smile fs-1 me-4 link-secondary"></i>
+                  <div>
+                    <h2 class="my-0 py-0 fs-3 text-secondary"> In the GRAY bus </h2>
+                  </div>
+                  <div class="d-flex align-items-center ms-auto gap-2">
+                    <p class="my-0 py-0 fs-6 text-secondary">14/2024</p>
+                    <i class="fa-solid fa-ellipsis-vertical fs-3 link-secondary"></i>
+                  </div>
+                </div>
+                <img
+                  src="https://fastly.picsum.photos/id/672/600/400.jpg?grayscale&hmac=OCVgVfseWq_VNFyCL82uC7ZzxaeT-mhiCkuZPpHA6tE"
+                  class="img-fluid" alt="Imagen 9">
+
+                <div class="card-body">
+                  <div class="mb-3 d-flex">
+                    <i class="fa-regular fa-heart fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-comment fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-paper-plane fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-bookmark fs-4 ms-auto link-secondary"></i>
+                  </div>
+                  <p class="lead text-secondary">150 likes</p>
+                  <p class="fs-6 text-secondary">Quisque mollis tincidunt metus, vel mollis tortor scelerisque at. Donec
+                    eget sodales
+                    felis, ut fermentum ipsum. In non diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec blandit porttitor, erat nunc
+                    molestie ipsum, a commodo sem enim sit amet justo. Donec ut lorem interdum, eleifend lorem id,
+                    pellentesque arcu. Integer cursus pellentesque tellus, pretium consequat mi vulputate a. #in the
+                    GRAY bus.</p>
+                </div>
+              </div>
             </div>
 
+            <!-- termina 2  -->
+            <!-- comienza 3  -->
+            <div class="container col-6 mt-4">
+              <div class="card mb-3 myOwnShadow fa-bg-secundary" style="width: 40rem;">
 
+                <div class="card-body d-flex align-items-center">
+                  <i class="fa-regular fa-face-smile fs-1 me-4 link-secondary"></i>
+                  <div>
+                    <h2 class="my-0 py-0 fs-3 text-secondary">GRAY effect</h2>
+                  </div>
+                  <div class="d-flex align-items-center ms-auto gap-2">
+                    <p class="my-0 py-0 fs-6 text-secondary">18/2024</p>
+                    <i class="fa-solid fa-ellipsis-vertical fs-3 link-secondary"></i>
+                  </div>
+                </div>
+                <img
+                  src="https://fastly.picsum.photos/id/800/600/400.jpg?grayscale&hmac=qKzsiQmobD6dNZfq1D16MQ5MILMiTWiNmFtA76wyUHM"
+                  class="img-fluid" alt="Imagen 9">
 
-            
+                <div class="card-body">
+                  <div class="mb-3 d-flex">
+                    <i class="fa-regular fa-heart fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-comment fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-paper-plane fs-4 me-2 link-secondary"></i>
+                    <i class="fa-regular fa-bookmark fs-4 ms-auto link-secondary"></i>
+                  </div>
+                  <p class="lead text-secondary">827 likes</p>
+                  <p class="fs-6 text-secondary">Quisque mollis tincidunt metus, vel mollis tortor scelerisque at. Donec
+                    eget sodales
+                    felis, ut fermentum ipsum. In non diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec blandit porttitor, erat nunc
+                    molestie ipsum, a commodo sem enim sit amet justo. Donec ut lorem interdum, eleifend lorem id,
+                    pellentesque arcu. Integer cursus pellentesque tellus, pretium consequat mi vulputate a. #GRAY effect</p>
+                </div>
+              </div>
+            </div>
+            <!-- termina 3  -->
           </div>
-          <!-- termina aqui  -->
 
         </div>
 
